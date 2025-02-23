@@ -81,6 +81,7 @@ class Program
         startTime = DateTime.Now;
 
         await Task.Delay(122000);
+        await resetDots();
     }
 
     private static void OnTimedEvent(object? sender, ElapsedEventArgs e)
@@ -277,7 +278,7 @@ class Program
 
         dot3.LedMode = LedModes.GlobalManual;
 
-        for (int i = 0; i < 75; i++)
+        for (int i = 0; i < 78; i++)
         {
             Console.WriteLine("Heart Beat!");
             dot3.VibrationGo = false;
@@ -529,7 +530,7 @@ class Program
         Cold(dot1, dot2);
 
         await Task.Delay(20000);
-        resetDots();
+        // resetDots();
         Cold(dot1, dot2);
     }
     private static async Task Cold(ManagedDot dot1, ManagedDot dot2)
@@ -629,8 +630,8 @@ class Program
 
         Cold(dot1, dot2);
 
-        await Task.Delay(700);
-        resetDots();
+        //await Task.Delay(700);
+        //resetDots();
     }
 
     /*
