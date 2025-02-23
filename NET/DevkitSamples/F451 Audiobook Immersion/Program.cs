@@ -58,7 +58,6 @@ class Program
         {
             Console.WriteLine(e.Message);
         }
-        resetDots();
 
         // Path to Audio book
         string path = "D:\\UT\\Spring 2025\\Full Stack Development\\Build Fest\\BuildFestTeam10\\NET\\DevkitSamples\\F451 Audiobook Immersion\\F451 Script Pt 2.wav";
