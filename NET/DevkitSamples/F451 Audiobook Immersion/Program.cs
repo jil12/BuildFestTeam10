@@ -146,7 +146,7 @@ class Program
         dot1.LedMode = LedModes.GlobalManual;
         dot2.LedMode = LedModes.GlobalManual;
 
-        for (int i = 0; i < 32; i++)
+        for (int i = 0; i < 30; i++)
         {
             await SirenHelp(dot1, dot2);
         }
@@ -551,7 +551,7 @@ class Program
 
     private static async Task BlueHelper()
     {
-        for (byte brightness = 20; brightness <= 100; brightness += 1) // Gradually increase brightness
+        for (byte brightness = 20; brightness <= 100; brightness += 2) // Gradually increase brightness
         {
             foreach (var dot in manager.Dots)
             {
@@ -629,6 +629,8 @@ class Program
 
         Cold(dot1, dot2);
 
+        await Task.Delay(700);
+        resetDots();
     }
 
     /*
