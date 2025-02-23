@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0-windows10.0.22621.0</TargetFramework>
+		<OutputType>Exe</OutputType>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Datafeel" Version="2.1.0-alpha" />
+		<PackageReference Include="Datafeel.NET.BLE" Version="2.1.0-alpha" />
+		<PackageReference Include="Datafeel.NET.Serial" Version="2.1.0-alpha" />
+		<PackageReference Include="NAudio" Version="2.2.1" />
+		<PackageReference Include="System.Text.Json" Version="9.0.2" />
+	</ItemGroup>
+
+</Project>
